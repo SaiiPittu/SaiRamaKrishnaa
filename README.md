@@ -69,8 +69,8 @@ Specialized in building full-stack web applications, real-time voice streaming p
 ### GitHub Stats & Activity
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=SaiiPittu&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Sai Pittu GitHub Stats" height="175" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SaiiPittu&layout=compact&theme=dark&hide_border=true" alt="Top Languages" height="175" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=SaiiPittu&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Sai Pittu GitHub Stats" height="175" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=SaiiPittu&layout=compact&theme=dark&hide_border=true" alt="Top Languages" height="175" />
 </p>
 
 ---
