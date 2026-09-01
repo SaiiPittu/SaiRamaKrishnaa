@@ -1,0 +1,20 @@
+<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #58a6ff; }
+    .stat { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
+    .bold { font-weight: 700; fill: #f0f6fc; }
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1px; rx: 6px; }
+  </style>
+
+  <rect x="0.5" y="0.5" width="494" height="194" class="bg" />
+
+  <text x="25" y="35" class="header">Sai Pittu — GitHub Activity &amp; Contributions</text>
+
+  <g transform="translate(25, 60)">
+    <text x="0" y="15" class="stat">⭐ Total Stars Earned: <tspan class="bold">22</tspan></text>
+    <text x="0" y="40" class="stat">💻 Total Commits: <tspan class="bold">18</tspan></text>
+    <text x="0" y="65" class="stat">🔀 Total PRs Created (Public &amp; Private): <tspan class="bold">0</tspan></text>
+    <text x="0" y="90" class="stat">❗ Total Issues Opened: <tspan class="bold">0</tspan></text>
+    <text x="0" y="115" class="stat">👀 Code Reviews Conducted: <tspan class="bold">0</tspan></text>
+  </g>
+</svg>
