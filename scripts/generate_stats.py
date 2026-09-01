@@ -26,15 +26,27 @@ query($login: String!) {
 """
 
 def fetch_stats():
+    if not GITHUB_TOKEN:
+        raise Exception("No GITHUB_TOKEN or METRICS_TOKEN found in environment.")
+        
     headers = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
     response = requests.post(
         "https://api.github.com/graphql",
         json={"query": graphql_query, "variables": {"login": USERNAME}},
         headers=headers
     )
+    
     if response.status_code != 200:
-        raise Exception(f"GraphQL query failed: {response.text}")
-    return response.json()["data"]["user"]
+        raise Exception(f"GraphQL query HTTP {response.status_code}: {response.text}")
+        
+    res = response.json()
+    if "errors" in res:
+        print(f"GraphQL Warnings/Errors: {res['errors']}")
+        
+    if "data" not in res or not res["data"].get("user"):
+        raise Exception(f"User '{USERNAME}' not returned in GraphQL response: {res}")
+        
+    return res["data"]["user"]
 
 def generate_svg(data):
     contribs = data["contributionsCollection"]
@@ -43,8 +55,8 @@ def generate_svg(data):
     total_issues = contribs["totalIssueContributions"]
     total_reviews = contribs["totalPullRequestReviewContributions"]
     
-    repos = data["repositories"]["nodes"]
-    total_stars = sum(r["stargazerCount"] for r in repos)
+    repos = data.get("repositories", {}).get("nodes", [])
+    total_stars = sum(r.get("stargazerCount", 0) for r in repos if r)
 
     svg = f"""<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
@@ -69,12 +81,9 @@ def generate_svg(data):
     return svg
 
 if __name__ == "__main__":
-    try:
-        data = fetch_stats()
-        svg_content = generate_svg(data)
-        os.makedirs(".github/assets", exist_ok=True)
-        with open(".github/assets/github-stats.svg", "w") as f:
-            f.write(svg_content)
-        print("Successfully generated .github/assets/github-stats.svg")
-    except Exception as e:
-        print(f"Error: {e}")
+    data = fetch_stats()
+    svg_content = generate_svg(data)
+    os.makedirs(".github/assets", exist_ok=True)
+    with open(".github/assets/github-stats.svg", "w") as f:
+        f.write(svg_content)
+    print("Successfully generated .github/assets/github-stats.svg")
