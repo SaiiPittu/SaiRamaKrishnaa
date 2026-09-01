@@ -66,14 +66,6 @@ Specialized in building full-stack web applications, real-time voice streaming p
 
 ---
 
-### GitHub Activity & Statistics
-
-<p align="left">
-  <img src="./.github/assets/github-stats.svg" alt="Sai Pittu GitHub Activity" width="495" />
-</p>
-
----
-
 ### Contact Information
 
 - Email: sairamakrishna568@gmail.com
