@@ -78,5 +78,3 @@ Specialized in building full-stack web applications, real-time voice streaming p
 
 - Email: sairamakrishna568@gmail.com
 - LinkedIn: [linkedin.com/in/sairamakrishnaa](https://www.linkedin.com/in/sairamakrishnaa/)
-- GitHub: [github.com/SaiiPittu](https://github.com/SaiiPittu)
-- Live App: [https://narad.synxait.in/](https://narad.synxait.in/)
