@@ -5,6 +5,8 @@ Founding Full Stack AI Engineer with 1+ years of zero-to-one startup experience 
 
 Specialized in building full-stack web applications, real-time voice streaming pipelines over WebSockets, Firecracker microVM and Linux jail code sandboxes, state-machine tool gating, offline evaluation harnesses, and containerized AWS infrastructure.
 
+- Live Platform: **[Narad — AI-Native Hiring Platform](https://narad.synxait.in/)**
+
 ---
 
 ### Tech Stack & Core Competencies
@@ -45,7 +47,7 @@ Specialized in building full-stack web applications, real-time voice streaming p
 
 ### Featured Production Systems
 
-#### 1. Narad — AI-Native Hiring Platform (Founding Engineer)
+#### 1. [Narad — AI-Native Hiring Platform](https://narad.synxait.in/) (Founding Engineer)
 *Zero-to-one hiring platform automating candidate evaluation via real-time voice screens, live coding sandboxes, and AI panel interviewers.*
 - **Full-Stack Architecture & Leadership:** Architected Narad zero-to-one across a React frontend and dual Node.js/Express & Python/FastAPI microservices backends from concept through system design to production release, leading 4 engineers and enforcing data invariants where AI outputs remain advisory while human approvals gate stage progression.
 - **Resume-Shortlisting Agent:** Built the automated screening engine using structured output parsing (`Pydantic`/`instructor`) and vector retrieval to generate defensible, evidence-backed candidate verdicts.
@@ -64,8 +66,18 @@ Specialized in building full-stack web applications, real-time voice streaming p
 
 ---
 
+### GitHub Stats & Activity
+
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=SaiiPittu&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Sai Pittu GitHub Stats" height="175" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SaiiPittu&layout=compact&theme=dark&hide_border=true" alt="Top Languages" height="175" />
+</p>
+
+---
+
 ### Contact Information
 
 - Email: sairamakrishna568@gmail.com
 - LinkedIn: [linkedin.com/in/sairamakrishnaa](https://www.linkedin.com/in/sairamakrishnaa/)
 - GitHub: [github.com/SaiiPittu](https://github.com/SaiiPittu)
+- Live App: [https://narad.synxait.in/](https://narad.synxait.in/)
